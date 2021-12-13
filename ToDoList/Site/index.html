@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Faire structure menu
+            User
+                Profil
+                Contacts
+                Stats
+
+            New
+                newProjet
+                newCatégorie
+                newToDoList
+                newTâches
+
+            Option
+                Langues(en/fr)
+                Notifications(on/off/gérer)
+                Archivage(on/off/spécifier dossier)
+                Son(on/off)
+                Thème(changer)
+
+            SwitchProject
+                Affiche Projets créer
+                Nav rapide entre projets
+
+            SwitchAgileCalendar
+                switch affichage méthode agile
+                switch affichage calendrier
+            -->
+
+            <ul>
+                <li class="menu">
+                    <p href="#user">User</p>
+                    <ul class="sous-menu" id="user">
+                        <li>Profil</li>
+                        <li>Contacts</li>
+                        <li>Stats</li>
+                    </ul>
+                </li>
+
+                <li class="menu">
+                    New
+                    <ul class="sous-menu">
+                        <li>Project</li>
+                        <li>Category</li>
+                        <li>ToDoList</li>
+                    </ul>
+                </li>
+
+                <li class="menu">
+                    Option
+                    <ul class="sous-menu">
+                        <li>Language</li>
+                        <li>Notifications</li>
+                        <li>Archive</li>
+                        <li>Sound</li>
+                        <li>Theme</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sidebar-profil">
+
+            </div>
+
+            <div class="sidebar-option">
+
+            </div>
+
+            <button class="switch-project">
+                <img src="./Ressources/imgSwitchProject.png" alt="SwitchProject">
+            </button>
+
+            <button class="switch-display">
+                <img src="./Ressources/imgSwitchCalendarAgile.png" alt="Switch calendar/Agile">
+            </button>    
+        </nav>    
+    </header>
+
+    <main>
+        <div class="agile-display">
+            <p>
+                Je suis l'affichage agile, en mode réduit je ne dois pas être là
+                si l'affichage calendrier apparaît !
+            </p>
+        </div>
+
+        <div class="calendar-display">
+            <p>
+                Je suis l'affichage calendrier, en mode réduit je ne dois pas être là
+                si l'affichage agile apparaît !
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Je suis un pied-de-page, pour l'instant je ne sers à rien mais un jour je serai utile</p>
+    </footer>
+        
+</body>
+
+</html>

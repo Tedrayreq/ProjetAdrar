@@ -1,0 +1,209 @@
+/* Thèmes
+1) theme1[#FAF6F0, #EEE0CB, #E1C8A3, #671317, #230608]
+2) theme2[#9EB3C2, #1C7293, #065A82, #1B3B6F, #21295C]
+3) theme3[#FFFF00, #FFD000, #FF8A00, #FF5E00, #FF0000]
+4) theme4[#8F4DD1, #BF99F2, #ABFA61, #8BDE2B, #7DBF22]
+*/
+
+/*
+1) Menu structure
+2) Sous-menu
+    test avec boutton voir si ça marche
+3) Animation menu
+4) split class
+5) :root{
+    --color-primary-300: #FAF6F0;
+    --color-primary-400: #EEE0CB;
+    (...)
+
+    --ff-primary: police;
+    --accent: police;
+}
+6) background classes
+.bg-light{background-color: var(--color-primary-300);}
+7) class container
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+8) @media
+*/
+
+/* 
+ _____    _     __       _     _      _   _____   _____ 
+|__ __| / _ \  | _ \   / _ \  | |    | | |  ___| |__ __|
+  | |  | | | | || \ \ | | | | | |    | | | |___    | |
+  | |  | | | | ||  | || | | | | |    | | |___  |   | |
+  | |  | |_| | ||_/ / | |_| | | |__  | |  ___| |   | |
+  |_|   \___/  |___/   \___/  |____| |_| |_____|   |_|
+
+
+table of contents
+
+1. global styles
+
+2. typography
+
+3. layout
+
+4. components
+
+*/
+
+/******************************************************
+1. global styles
+*******************************************************/
+
+:root{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+
+    --hauteur-menu: 200px;
+
+    --bg-color-base: white;
+    --bg-color-1: lightblue;
+    --bg-color-accent: darkblue;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*****************************************************
+2. typography
+*****************************************************/
+
+
+
+/****************************************************
+3. layout
+****************************************************/
+
+/*
+header{
+
+}
+*/
+
+nav{
+    position: sticky;
+    width: 100%;
+    font-size: 2rem;
+    top: 0;
+}
+
+nav > ul{
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0, 3);
+    min-height: var(--hauteur-menu);
+}
+
+nav ul{
+    list-style-type: none;
+    background-color: var(--bg-color-base);
+    
+}
+
+nav ul li {
+    position: relative;
+    background-color: var(--bg-color-1);
+    height: 100%;
+    flex: 1;
+    color: var(--bg-color-base);
+    z-index: 1;
+    
+}
+
+/*
+main{
+
+}
+*/
+
+footer{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+}
+
+/****************************************************
+3. components
+****************************************************/
+
+/* .menu */
+
+.sous-menu {
+    display: none;
+    flex-direction: column;
+     
+}
+
+.switch-project {
+    background-repeat: no-repeat;
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    top: 2.9rem;
+    left: 0;
+    width: 5rem;
+    height: 5rem;
+}
+
+.switch-display {
+    background-repeat: no-repeat;
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    top: 2.9rem;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+}
+
+.menu:active .sous-menu {
+    display: flex;
+        
+}
+
+.menu:hover, .sous-menu li:hover {
+    background-color: var(--bg-color-accent);
+}
+
+/* .menu:active::after {
+    display: none;
+} */
+
+/*********************************************
+SIDEBAR
+**********************************************
+
+.sidebar-profil{
+
+}
+
+.sidebar-option{
+
+} 
+*/
+
+.agile-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
