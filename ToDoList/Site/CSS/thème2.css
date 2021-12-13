@@ -1,0 +1,10 @@
+/* 2) theme2[#9EB3C2, #1C7293, #065A82, #1B3B6F, #21295C] */
+
+:root {
+    --bg-color-base: #9EB3C2;
+    --bg-color-1: #1C7293;
+    --bg-color-2: #065A82;
+    --bg-color-accent: #1B3B6F;
+    --bg-color-accent1: #21295C;
+}
+

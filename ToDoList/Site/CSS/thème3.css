@@ -1,0 +1,9 @@
+/* 3) theme3[#FFFF00, #FFD000, #FF8A00, #FF5E00, #FF0000] */
+
+:root {
+    --bg-color-base: #FFFF00;
+    --bg-color-1: #FFD000;
+    --bg-color-2: #FF8A00;
+    --bg-color-accent: #FF5E00;
+    --bg-color-accent1: #FF0000;
+}

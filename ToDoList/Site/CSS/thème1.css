@@ -1,0 +1,11 @@
+/* 1) theme1[#FAF6F0, #EEE0CB, #E1C8A3, #671317, #230608] */
+
+:root {
+    --bg-color-base: #FAF6F0;
+    --bg-color-1: #EEE0CB;
+    --bg-color-2: #E1C8A3;
+    --bg-color-accent: #671317;
+    --bg-color-accent1: #230608;
+
+}
+

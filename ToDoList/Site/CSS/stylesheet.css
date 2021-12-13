@@ -63,9 +63,9 @@ table of contents
 
     --hauteur-menu: 200px;
 
-    --bg-color-base: white;
+    /* --bg-color-base: white;
     --bg-color-1: lightblue;
-    --bg-color-accent: darkblue;
+    --bg-color-accent: darkblue; */
 }
 
 *{
@@ -115,9 +115,13 @@ nav ul li {
     background-color: var(--bg-color-1);
     height: 100%;
     flex: 1;
-    color: var(--bg-color-base);
+    color: var(--bg-color-accent1);
     z-index: 1;
     
+}
+
+nav ul li:hover {
+    color: var(--bg-color-base);
 }
 
 /*
@@ -169,9 +173,9 @@ footer{
     height: 5rem;
 }
 
-.menu:active .sous-menu {
-    display: flex;
-        
+.menu:hover .sous-menu {
+    display: block;
+           
 }
 
 .menu:hover, .sous-menu li:hover {

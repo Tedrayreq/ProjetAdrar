@@ -1,0 +1,9 @@
+/* 4) theme4[#ABFA61, #8BDE2B, #7DBF22, #BF99F2, #8F4DD1] */
+
+:root {
+    --bg-color-base: #ABFA61 ;
+    --bg-color-1: #8BDE2B;
+    --bg-color-2: #7DBF22;
+    --bg-color-accent: #BF99F2;
+    --bg-color-accent1: #8F4DD1;
+}
